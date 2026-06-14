@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  portfolio:
+    build: .
+    container_name: rojika-portfolio
+    ports:
+      - "8000:80"
+    restart: unless-stopped
